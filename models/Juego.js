@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Mixed } = require('mongoose');
 
 const JuegoBaseSchema = new Schema({
   titulo: {
@@ -32,7 +32,7 @@ const TriviaSchema = new Schema({
   preguntas: [{
     pregunta: String,
     opciones: [String],
-    respuesta: String,
+    respuesta: Mixed,
     tiempo: Number
   }]
 });
