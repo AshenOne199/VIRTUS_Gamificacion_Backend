@@ -65,7 +65,6 @@ const generar = (rows, columns, words) => {
       letra = board[r][c],
       possible = false;
     if (word.length + 1 > rows && word.length + 1 > columns) {
-      console.error(`La palabra ${word} no cabe en el tablero`);
       continue;
     } else {
       while (!possible) {
